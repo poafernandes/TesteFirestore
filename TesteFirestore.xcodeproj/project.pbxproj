@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,13 @@
 		AC3F50F726C044B80027955F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3F50F526C044B80027955F /* Main.storyboard */; };
 		AC3F50F926C044B90027955F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC3F50F826C044B90027955F /* Assets.xcassets */; };
 		AC3F50FC26C044B90027955F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3F50FA26C044B90027955F /* LaunchScreen.storyboard */; };
+		AC58733626C04BA1006D7C4F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC58733526C04BA1006D7C4F /* GoogleService-Info.plist */; };
+		D010D3B1B4C7C1154813FB6F /* Pods_TesteFirestore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 932429A977297197823FFF2A /* Pods_TesteFirestore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		401C9FA64B11017DC8800E3A /* Pods-TesteFirestore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TesteFirestore.release.xcconfig"; path = "Target Support Files/Pods-TesteFirestore/Pods-TesteFirestore.release.xcconfig"; sourceTree = "<group>"; };
+		932429A977297197823FFF2A /* Pods_TesteFirestore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TesteFirestore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC3F50EC26C044B80027955F /* TesteFirestore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TesteFirestore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC3F50EF26C044B80027955F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC3F50F126C044B80027955F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		AC3F50F826C044B90027955F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC3F50FB26C044B90027955F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC3F50FD26C044B90027955F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC58733526C04BA1006D7C4F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DE855E975514668EC6CD72A4 /* Pods-TesteFirestore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TesteFirestore.debug.xcconfig"; path = "Target Support Files/Pods-TesteFirestore/Pods-TesteFirestore.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D010D3B1B4C7C1154813FB6F /* Pods_TesteFirestore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52D8CA2FEF4EF2B1B60E3640 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				932429A977297197823FFF2A /* Pods_TesteFirestore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E867B6C1B4C43AB8FC30E0B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE855E975514668EC6CD72A4 /* Pods-TesteFirestore.debug.xcconfig */,
+				401C9FA64B11017DC8800E3A /* Pods-TesteFirestore.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AC3F50E326C044B80027955F = {
 			isa = PBXGroup;
 			children = (
 				AC3F50EE26C044B80027955F /* TesteFirestore */,
 				AC3F50ED26C044B80027955F /* Products */,
+				6E867B6C1B4C43AB8FC30E0B /* Pods */,
+				52D8CA2FEF4EF2B1B60E3640 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +82,7 @@
 		AC3F50EE26C044B80027955F /* TesteFirestore */ = {
 			isa = PBXGroup;
 			children = (
+				AC58733526C04BA1006D7C4F /* GoogleService-Info.plist */,
 				AC3F50EF26C044B80027955F /* AppDelegate.swift */,
 				AC3F50F126C044B80027955F /* SceneDelegate.swift */,
 				AC3F50F326C044B80027955F /* ViewController.swift */,
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC3F510026C044B90027955F /* Build configuration list for PBXNativeTarget "TesteFirestore" */;
 			buildPhases = (
+				763DCD66FA5983BECED3CA2F /* [CP] Check Pods Manifest.lock */,
 				AC3F50E826C044B80027955F /* Sources */,
 				AC3F50E926C044B80027955F /* Frameworks */,
 				AC3F50EA26C044B80027955F /* Resources */,
+				B56E58289400A870AE2FC543 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,12 +154,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC3F50FC26C044B90027955F /* LaunchScreen.storyboard in Resources */,
+				AC58733626C04BA1006D7C4F /* GoogleService-Info.plist in Resources */,
 				AC3F50F926C044B90027955F /* Assets.xcassets in Resources */,
 				AC3F50F726C044B80027955F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		763DCD66FA5983BECED3CA2F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TesteFirestore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B56E58289400A870AE2FC543 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TesteFirestore/Pods-TesteFirestore-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TesteFirestore/Pods-TesteFirestore-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TesteFirestore/Pods-TesteFirestore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AC3F50E826C044B80027955F /* Sources */ = {
@@ -283,6 +355,7 @@
 		};
 		AC3F510126C044B90027955F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE855E975514668EC6CD72A4 /* Pods-TesteFirestore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +375,7 @@
 		};
 		AC3F510226C044B90027955F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 401C9FA64B11017DC8800E3A /* Pods-TesteFirestore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
